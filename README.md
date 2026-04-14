@@ -15,7 +15,8 @@
 ### 1️⃣ LOGIN PAGE - Authentication System ✅
 
 **Screenshot**: User login interface with email/password fields
-- **File**: `docs/1-login-screenshot.png`
+- **File**: `docs/login-screenshot.png`
+- ![Login Page](./docs/login-screenshot.png)
 
 **Requirement Demonstrated**: 
 - ✅ **User Authentication** - Secure login with email/password validation
@@ -29,7 +30,8 @@
 ### 2️⃣ REGISTRATION PAGE - User Registration System ✅
 
 **Screenshot**: User registration form with all required fields
-- **File**: `docs/2-register-screenshot.png`
+- **File**: `docs/register-screenshot.png`
+- ![Register Page](./docs/register-screenshot.png)
 
 **Requirement Demonstrated**:
 - ✅ **User Registration API** - Complete registration with name, email, password
@@ -44,7 +46,8 @@
 ### 3️⃣ USER DASHBOARD - Task Management CRUD ✅
 
 **Screenshot**: User dashboard showing task list with statistics
-- **File**: `docs/3-dashboard-user-himanshu.png`
+- **File**: `docs/dashboard-user-himanshu.png`
+- ![Dashboard User](./docs/dashboard-user-himanshu.png)
 
 **Requirement Demonstrated**:
 - ✅ **Protected Dashboard** - JWT token required to access this page
@@ -60,7 +63,8 @@
 ### 4️⃣ TASK FILTERING - Advanced Features ✅
 
 **Screenshot**: Dashboard with active filter showing task breakdown
-- **File**: `docs/4-dashboard-filter.png`
+- **File**: `docs/dashboard-filter.png`
+- ![Dashboard Filter](./docs/dashboard-filter.png)
 
 **Requirement Demonstrated**:
 - ✅ **Filter Functionality** - Switch between All/Pending/Progress/Done status views
@@ -75,7 +79,8 @@
 ### 5️⃣ ADMIN DASHBOARD - Role-Based Access Control ✅
 
 **Screenshot**: Admin view showing all users' tasks with creator attribution
-- **File**: `docs/5-dashboard-admin.png`
+- **File**: `docs/dashboard-admin.png`
+- ![Dashboard Admin](./docs/dashboard-admin.png)
 
 **Requirement Demonstrated**:
 - ✅ **Role-Based Access Control** - Admin account sees all tasks from all users
@@ -90,7 +95,8 @@
 ### 6️⃣ SWAGGER API DOCUMENTATION - Live Interactive Testing ✅
 
 **Screenshot**: Swagger UI showing all endpoints with authorization
-- **File**: `docs/6-swagger-api.png`
+- **File**: `docs/swagger-api.png`
+- ![Swagger API](./docs/swagger-api.png)
 - **Live Access**: http://localhost:5000/api/v1/docs
 
 **Requirement Demonstrated**:
