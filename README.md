@@ -15,8 +15,8 @@
 ### 1️⃣ LOGIN PAGE - Authentication System ✅
 
 **Screenshot**: User login interface with email/password fields
-- **File**: `docs/login-screenshot.png`
-- ![Login Page](./docs/login-screenshot.png)
+- **File**: `docs/sign in.png`
+- ![Login Page](./docs/sign%20in.png)
 
 **Requirement Demonstrated**: 
 - ✅ **User Authentication** - Secure login with email/password validation
@@ -30,8 +30,8 @@
 ### 2️⃣ REGISTRATION PAGE - User Registration System ✅
 
 **Screenshot**: User registration form with all required fields
-- **File**: `docs/register-screenshot.png`
-- ![Register Page](./docs/register-screenshot.png)
+- **File**: `docs/register.png`
+- ![Register Page](./docs/register.png)
 
 **Requirement Demonstrated**:
 - ✅ **User Registration API** - Complete registration with name, email, password
@@ -46,8 +46,8 @@
 ### 3️⃣ USER DASHBOARD - Task Management CRUD ✅
 
 **Screenshot**: User dashboard showing task list with statistics
-- **File**: `docs/dashboard-user-himanshu.png`
-- ![Dashboard User](./docs/dashboard-user-himanshu.png)
+- **File**: `docs/user himanshu.png`
+- ![Dashboard User](./docs/user%20himanshu.png)
 
 **Requirement Demonstrated**:
 - ✅ **Protected Dashboard** - JWT token required to access this page
@@ -60,11 +60,11 @@
 
 ---
 
-### 4️⃣ TASK FILTERING - Advanced Features ✅
+### 4️⃣ TASK FILTERING & SECTION - Advanced Features ✅
 
-**Screenshot**: Dashboard with active filter showing task breakdown
-- **File**: `docs/dashboard-filter.png`
-- ![Dashboard Filter](./docs/dashboard-filter.png)
+**Screenshot**: Dashboard with task section and filtering
+- **File**: `docs/section task.png`
+- ![Dashboard Section](./docs/section%20task.png)
 
 **Requirement Demonstrated**:
 - ✅ **Filter Functionality** - Switch between All/Pending/Progress/Done status views
@@ -79,8 +79,8 @@
 ### 5️⃣ ADMIN DASHBOARD - Role-Based Access Control ✅
 
 **Screenshot**: Admin view showing all users' tasks with creator attribution
-- **File**: `docs/dashboard-admin.png`
-- ![Dashboard Admin](./docs/dashboard-admin.png)
+- **File**: `docs/admin1.png`
+- ![Dashboard Admin](./docs/admin1.png)
 
 **Requirement Demonstrated**:
 - ✅ **Role-Based Access Control** - Admin account sees all tasks from all users
@@ -92,12 +92,20 @@
 
 ---
 
-### 6️⃣ SWAGGER API DOCUMENTATION - Live Interactive Testing ✅
+### 6️⃣ SWAGGER API ENDPOINTS - Live Interactive Testing ✅
 
-**Screenshot**: Swagger UI showing all endpoints with authorization
-- **File**: `docs/swagger-api.png`
-- ![Swagger API](./docs/swagger-api.png)
+**Screenshot**: Swagger UI showing all endpoints with documentation
+- **File**: `docs/swagger-endpoints.png`
+- ![Swagger Endpoints](./docs/swagger-endpoints.png)
 - **Live Access**: http://localhost:5000/api/v1/docs
+
+---
+
+### 7️⃣ SWAGGER AUTHORIZATION - Security & Testing ✅
+
+**Screenshot**: Swagger authentication and authorization interface
+- **File**: `docs/swagger-auth.png`
+- ![Swagger Auth](./docs/swagger-auth.png)
 
 **Requirement Demonstrated**:
 - ✅ **API Documentation** - All endpoints documented with request/response schemas
@@ -107,6 +115,13 @@
 - ✅ **HTTP Methods** - Color-coded endpoints (GET=blue, POST=green, PUT=orange, DELETE=red)
 - ✅ **Protected Routes** - Lock icons (🔒) show authentication requirements
 - **Implementation**: Swagger configured at `/api/v1/docs` with full OpenAPI schema
+
+**Swagger Authorization Demonstrated**:
+- ✅ **Token Authentication** - Secure JWT token handling
+- ✅ **Bearer Token** - Authorization header properly configured
+- ✅ **Protected Endpoints** - All sensitive operations require authentication
+- ✅ **Security Standards** - Industry-standard OAuth 2.0 Bearer token scheme
+- ✅ **Testing Interface** - All endpoints callable with valid token
 
 ---
 
