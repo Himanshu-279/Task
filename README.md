@@ -1,10 +1,96 @@
 # 📌 PRIMETRADE BACKEND DEVELOPER INTERN ASSIGNMENT
 
 **Submitted By**: Himanshu Verma  
-**Year**: B.Tech 4th Year  
+**Year**: B.Tech 4th Year (Final Year)  
 **Position**: Backend Developer (Intern)  
 **Assignment Completion Time**: 2 hours (including full frontend)  
 **Status**: ✅ **100% COMPLETE - ALL REQUIREMENTS MET**
+
+---
+
+## 🖼️ APPLICATION SCREENSHOTS - DEMONSTRATING ALL REQUIREMENTS
+
+### 1️⃣ LOGIN PAGE - Authentication System ✅
+
+![Login Page - User Authentication](./docs/1-login-screenshot.png)
+
+**Requirement Demonstrated**: 
+- ✅ **User Authentication** - Secure login with email/password validation
+- ✅ **Security** - Password input field (masked), form validation
+- ✅ **Frontend Integration** - React.js login page with Axios POST request to backend
+- ✅ **User Experience** - Clear "Create Account" link for new users
+- **Implementation**: POST `/api/v1/auth/login` endpoint validates credentials, generates JWT token, returns to frontend
+
+---
+
+### 2️⃣ REGISTRATION PAGE - User Registration System ✅
+
+![Registration Page - User Registration](./docs/2-dashboard-user-himanshu.png)
+
+**Requirement Demonstrated**:
+- ✅ **User Registration API** - Complete registration with name, email, password
+- ✅ **Security** - Password hashing (bcryptjs 12 rounds), input validation
+- ✅ **Role-Based System** - Users created with default "user" role
+- ✅ **Database Integration** - User data stored in MongoDB with validation
+- ✅ **Error Handling** - Form validation prevents invalid submissions
+- **Implementation**: POST `/api/v1/auth/register` returns user object and JWT token
+
+---
+
+### 3️⃣ USER DASHBOARD - Task Management CRUD ✅
+
+![User Dashboard - Task List View](./docs/3-dashboard-user-filter.png)
+
+**Requirement Demonstrated**:
+- ✅ **Protected Dashboard** - JWT token required to access this page
+- ✅ **Task Statistics** - Shows Pending(1), In Progress(1), Completed(1), Total Tasks(3)
+- ✅ **Read Operation** - GET `/api/v1/tasks` displays all user's tasks
+- ✅ **Task Filtering** - Filter buttons for All/Pending/Progress/Done statuses
+- ✅ **CRUD Operations** - Edit and Delete buttons for each task
+- ✅ **Create Task Form** - Left panel for creating new tasks with status dropdown
+- **Implementation**: React Dashboard.jsx calls protected API endpoints with JWT token
+
+---
+
+### 4️⃣ TASK FILTERING - Advanced Features ✅
+
+![Task Dashboard with Filter - Feature Rich UI](./docs/4-dashboard-tasks.png)
+
+**Requirement Demonstrated**:
+- ✅ **Filter Functionality** - Switch between All/Pending/Progress/Done status views
+- ✅ **Dynamic UI** - Task counts update based on filters
+- ✅ **Status Management** - Color-coded status badges (yellow=pending, blue=progress, green=done)
+- ✅ **Real-time Updates** - Dashboard reflects all CRUD operations
+- ✅ **User-Friendly Design** - Clean interface with clear visual hierarchy
+- **Implementation**: Frontend manages filter state, displays filtered tasks from backend response
+
+---
+
+### 5️⃣ ADMIN DASHBOARD - Role-Based Access Control ✅
+
+![Admin Dashboard - All Users' Tasks View](./docs/5-dashboard-admin.png)
+
+**Requirement Demonstrated**:
+- ✅ **Role-Based Access Control** - Admin account sees all tasks from all users
+- ✅ **User Details** - Shows task creator info "By: username" for each task
+- ✅ **Admin Privileges** - Access to tasks belonging to other users (ram, shyam, himanshu)
+- ✅ **Task Statistics** - Admin sees aggregated counts (3 Pending, 4 In Progress, 3 Done, Total 10)
+- ✅ **Scalability** - System handles multiple users and tasks efficiently
+- **Implementation**: GET `/api/v1/tasks` returns all tasks when user role is "admin"
+
+---
+
+### 6️⃣ TASK OPERATIONS - Edit & Delete ✅
+
+![Task Operations - User Edit and Delete](./docs/6-task-operations.png)
+
+**Requirement Demonstrated**:
+- ✅ **Update Operation (PUT)** - Edit button allows modifying task details
+- ✅ **Delete Operation** - Delete button removes task from database
+- ✅ **Task Ownership** - "By: user" shows who owns the task
+- ✅ **Status Management** - Tasks have distinct status values (pending, in-progress, done)
+- ✅ **Frontend Validation** - Edit/Delete actions trigger API calls with proper error handling
+- **Implementation**: PUT `/api/v1/tasks/:id` and DELETE `/api/v1/tasks/:id` endpoints with ownership verification
 
 ---
 
