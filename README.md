@@ -1,13 +1,5 @@
 # 📌 PRIMETRADE BACKEND DEVELOPER INTERN ASSIGNMENT
 
-**Submitted By**: Himanshu Verma  
-**Year**: B.Tech 4th Year  
-**Position**: Backend Developer (Intern)  
-**Assignment Completion Time**: 2 hours (including full frontend)  
-**Status**: ✅ **100% COMPLETE - ALL REQUIREMENTS MET**
-
----
-
 ## 🎯 ASSIGNMENT REQUIREMENTS - STATUS
 
 ### ✅ Backend (Primary Focus)
