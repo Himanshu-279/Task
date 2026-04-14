@@ -10,9 +10,12 @@
 
 ## 🖼️ APPLICATION SCREENSHOTS - DEMONSTRATING ALL REQUIREMENTS
 
+> **📸 Screenshots show the complete application in action, demonstrating all assignment requirements**
+
 ### 1️⃣ LOGIN PAGE - Authentication System ✅
 
-![Login Page - User Authentication](./docs/1-login-screenshot.png)
+**Screenshot**: User login interface with email/password fields
+- **File**: `docs/1-login-screenshot.png`
 
 **Requirement Demonstrated**: 
 - ✅ **User Authentication** - Secure login with email/password validation
@@ -25,7 +28,8 @@
 
 ### 2️⃣ REGISTRATION PAGE - User Registration System ✅
 
-![Registration Page - User Registration](./docs/2-dashboard-user-himanshu.png)
+**Screenshot**: User registration form with all required fields
+- **File**: `docs/2-register-screenshot.png`
 
 **Requirement Demonstrated**:
 - ✅ **User Registration API** - Complete registration with name, email, password
@@ -39,7 +43,8 @@
 
 ### 3️⃣ USER DASHBOARD - Task Management CRUD ✅
 
-![User Dashboard - Task List View](./docs/3-dashboard-user-filter.png)
+**Screenshot**: User dashboard showing task list with statistics
+- **File**: `docs/3-dashboard-user-himanshu.png`
 
 **Requirement Demonstrated**:
 - ✅ **Protected Dashboard** - JWT token required to access this page
@@ -54,7 +59,8 @@
 
 ### 4️⃣ TASK FILTERING - Advanced Features ✅
 
-![Task Dashboard with Filter - Feature Rich UI](./docs/4-dashboard-tasks.png)
+**Screenshot**: Dashboard with active filter showing task breakdown
+- **File**: `docs/4-dashboard-filter.png`
 
 **Requirement Demonstrated**:
 - ✅ **Filter Functionality** - Switch between All/Pending/Progress/Done status views
@@ -68,7 +74,8 @@
 
 ### 5️⃣ ADMIN DASHBOARD - Role-Based Access Control ✅
 
-![Admin Dashboard - All Users' Tasks View](./docs/5-dashboard-admin.png)
+**Screenshot**: Admin view showing all users' tasks with creator attribution
+- **File**: `docs/5-dashboard-admin.png`
 
 **Requirement Demonstrated**:
 - ✅ **Role-Based Access Control** - Admin account sees all tasks from all users
@@ -80,17 +87,20 @@
 
 ---
 
-### 6️⃣ TASK OPERATIONS - Edit & Delete ✅
+### 6️⃣ SWAGGER API DOCUMENTATION - Live Interactive Testing ✅
 
-![Task Operations - User Edit and Delete](./docs/6-task-operations.png)
+**Screenshot**: Swagger UI showing all endpoints with authorization
+- **File**: `docs/6-swagger-api.png`
+- **Live Access**: http://localhost:5000/api/v1/docs
 
 **Requirement Demonstrated**:
-- ✅ **Update Operation (PUT)** - Edit button allows modifying task details
-- ✅ **Delete Operation** - Delete button removes task from database
-- ✅ **Task Ownership** - "By: user" shows who owns the task
-- ✅ **Status Management** - Tasks have distinct status values (pending, in-progress, done)
-- ✅ **Frontend Validation** - Edit/Delete actions trigger API calls with proper error handling
-- **Implementation**: PUT `/api/v1/tasks/:id` and DELETE `/api/v1/tasks/:id` endpoints with ownership verification
+- ✅ **API Documentation** - All endpoints documented with request/response schemas
+- ✅ **OpenAPI 3.0 Specification** - Professional API documentation standard
+- ✅ **Interactive Testing** - "Try it out" feature for real-time endpoint testing
+- ✅ **Authorization Support** - Bearer token authentication built-in
+- ✅ **HTTP Methods** - Color-coded endpoints (GET=blue, POST=green, PUT=orange, DELETE=red)
+- ✅ **Protected Routes** - Lock icons (🔒) show authentication requirements
+- **Implementation**: Swagger configured at `/api/v1/docs` with full OpenAPI schema
 
 ---
 
@@ -323,7 +333,140 @@ curl -X POST http://localhost:5000/api/v1/tasks \
 
 ---
 
-## 🗄️ DATABASE SCHEMA
+## � SWAGGER API DOCUMENTATION
+
+### Access Swagger UI
+When your backend is running, open:
+```
+http://localhost:5000/api/v1/docs
+```
+
+### Swagger Features
+
+#### 🎨 Beautiful Interactive Interface
+```
+┌─────────────────────────────────────────────────────────┐
+│  🟢 Primetrade.ai Backend API  |  v1.0.0  |  OAS 3.0   │
+│  REST API with Auth & Role-Based Access                │
+│                                            [Authorize] 🔒│
+├─────────────────────────────────────────────────────────┤
+│ 📌 Auth                                                 │
+│  🟢 POST  /api/v1/auth/register  Register a new user   │
+│  🟢 POST  /api/v1/auth/login     Login user            │
+│  🔵 GET   /api/v1/auth/me        Get current user (🔒) │
+│                                                         │
+│ 📌 Tasks                                                │
+│  🔵 GET   /api/v1/tasks          Get all tasks (🔒)    │
+│  🟢 POST  /api/v1/tasks          Create task (🔒)      │
+│  🔵 GET   /api/v1/tasks/{id}     Get single task (🔒)  │
+│  🟠 PUT   /api/v1/tasks/{id}     Update task (🔒)      │
+│  🔴 DELETE /api/v1/tasks/{id}    Delete task (🔒)      │
+└─────────────────────────────────────────────────────────┘
+```
+
+#### ✨ Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Try It Out** | Click any endpoint → "Try it out" → Enter data → "Execute" |
+| **Authorization** | Click "Authorize" button, paste JWT token, all endpoints unlock 🔓 |
+| **Request/Response** | See exact JSON structure, status codes, examples |
+| **Schema Validation** | Auto-validates your request JSON before sending |
+| **Color Coded Methods** | 🟢 POST (Create), 🔵 GET (Read), 🟠 PUT (Update), 🔴 DELETE (Delete) |
+| **Lock Icon** | 🔒 = Requires authentication (protected endpoint) |
+
+#### 🧪 Testing Example in Swagger
+
+**Step 1: Login and Get Token**
+```
+1. Click: POST /auth/login
+2. Click: "Try it out"
+3. Enter:
+   {
+     "email": "john@test.com",
+     "password": "password123"
+   }
+4. Click: "Execute"
+5. Response: { "token": "eyJhbGc...", "user": {...} }
+6. Copy the token value
+```
+
+**Step 2: Authorize Remaining Endpoints**
+```
+1. Click: "Authorize" button (top right)
+2. Paste your token: eyJhbGc...
+3. Click: "Authorize"
+4. Now all 🔒 protected endpoints are accessible
+```
+
+**Step 3: Test Protected Endpoints**
+```
+1. Click: GET /auth/me
+2. Click: "Try it out"
+3. Click: "Execute"
+4. See your user details instantly ✓
+
+1. Click: POST /tasks
+2. Click: "Try it out"
+3. Enter task data:
+   {
+     "title": "Test Task",
+     "description": "Testing from Swagger",
+     "status": "pending"
+   }
+4. Click: "Execute"
+5. Task created successfully ✓
+```
+
+#### 📊 All Endpoints in Swagger
+
+```
+Authentication Endpoints:
+├─ POST /api/v1/auth/register
+│  └─ Creates new user, returns JWT token & user object
+├─ POST /api/v1/auth/login
+│  └─ Authenticates user, returns JWT token & user object
+└─ GET /api/v1/auth/me (Protected 🔒)
+   └─ Returns current authenticated user's details
+
+Task Management Endpoints:
+├─ GET /api/v1/tasks (Protected 🔒)
+│  └─ Returns all user's tasks (admin gets all tasks)
+├─ POST /api/v1/tasks (Protected 🔒)
+│  └─ Creates new task (auto-linked to current user)
+├─ GET /api/v1/tasks/:id (Protected 🔒)
+│  └─ Returns specific task details
+├─ PUT /api/v1/tasks/:id (Protected 🔒)
+│  └─ Updates task (only owner or admin can update)
+└─ DELETE /api/v1/tasks/:id (Protected 🔒)
+   └─ Deletes task (only owner or admin can delete)
+```
+
+#### 🎯 What Swagger Demonstrates
+
+✅ **Full API Documentation** - Every endpoint documented  
+✅ **Request/Response Schemas** - Exact JSON structure shown  
+✅ **Security** - Authorization integration visible  
+✅ **HTTP Methods** - Color-coded for clarity  
+✅ **Protected Routes** - Lock icons show authentication requirements  
+✅ **Live Testing** - No external tools needed - test right in Swagger!  
+✅ **Status Codes** - 200, 201, 400, 401, 403, 404, 500 all documented  
+✅ **Error Handling** - See error responses for invalid input  
+
+### Pro Tips 💡
+
+- ✅ Test endpoints in order: register → login → use token on protected routes
+- ✅ Keep token handy from login response
+- ✅ Use "Authorize" for all subsequent protected endpoints
+- ✅ Try invalid data to see error validation in action
+- ✅ Check response examples to understand data structure
+- ✅ All endpoint descriptions explain what they do
+
+**Swagger is your interactive API playground!** 🚀 No Postman needed, everything is right here.
+
+---
+
+## �🗄️ DATABASE SCHEMA
 
 ### Users Collection
 ```javascript
