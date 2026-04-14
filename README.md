@@ -833,7 +833,7 @@ MIT License - Free to use for evaluation
 ## 👨‍💻 DEVELOPER
 
 **Himanshu Verma**
-- B.Tech 3rd Year Student
+- B.Tech 4th Year Student
 - Full-Stack Developer
 - GitHub: [@Himanshu-279](https://github.com/Himanshu-279)
 
